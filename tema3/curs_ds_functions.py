@@ -1,7 +1,7 @@
-def eliminare_dupes(l: list[int] = []):
+def eliminare_dupes(l= []):
     return set(l)
 
-def maxim_varsta(l: list[tuple[str, int]] = []) -> str:
+def maxim_varsta(l= []) -> str:
     maxim = l[0][1]
     nume = l[0][0]
     for i in l:
@@ -11,7 +11,7 @@ def maxim_varsta(l: list[tuple[str, int]] = []) -> str:
     return nume
 # print(maxim_varsta([("ion", 23), ("vasile", 55), ("ioana", 54)]))
 
-def nr_frecvent(l: tuple[int] = ()) -> int:
+def nr_frecvent(l = ()) -> int:
     dictionar = {}
     for i in l:
         if i not in dictionar:
@@ -27,7 +27,7 @@ def nr_frecvent(l: tuple[int] = ()) -> int:
     return nr_maxim
 # print(nr_frecvent((1, 2, 2, 2, 3, 4)))
 
-def cuvant_frecvent(s: str = "") -> str:
+def cuvant_frecvent(s = "") -> str:
     lista_cuvinte = s.split(' ')
     dictionar = {}
     for cuvant in lista_cuvinte:
@@ -45,7 +45,7 @@ def cuvant_frecvent(s: str = "") -> str:
     return cuvant
 # print(cuvant_frecvent("apple banana banana banana apple orange banana apple"))
 
-def switch_chei_valori(dictionar: dict = {}) -> dict:
+def switch_chei_valori(dictionar = {}) -> dict:
     dictionar2 = {}
     for key, value in dictionar.items():
         dictionar2[value] = key
@@ -57,7 +57,7 @@ def switch_chei_valori(dictionar: dict = {}) -> dict:
 list1 = [(1, "apple"), (3, "orange"), (5, "banana")]
 list2 = [(2, "grape"), (4, "kiwi"), (6, "melon")]
 
-def homework(list1: list[tuple], list2: list[tuple]) -> list[tuple]:
+def homework(list1, list2) -> list[tuple]:
     lista = list1 + list2
     for i in range(0, len(lista) - 1):
         for j in range(i + 1, len(lista)):
@@ -73,7 +73,7 @@ people = {
     "Charlie": {"age": 35, "city": "Chicago"}
 }
 
-def oldest(dictionar: dict = {}) -> tuple[str, int]:
+def oldest(dictionar = {}) -> tuple[str, int]:
     oldest = ""
     varsta_maxim = 0
     for key, value in dictionar.items():
@@ -83,7 +83,7 @@ def oldest(dictionar: dict = {}) -> tuple[str, int]:
     return oldest, varsta_maxim
 # print(oldest(people))
 
-def list_new_york(dictionar: dict = {}) -> list[str]:
+def list_new_york(dictionar = {}) -> list[str]:
     lista = []
     for key, value in dictionar.items():
         if value["city"] == "New York":
