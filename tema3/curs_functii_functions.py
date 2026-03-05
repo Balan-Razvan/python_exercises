@@ -1,3 +1,4 @@
+# curs functii
 def is_even(n = 0) -> bool:
     return n % 2 == 0
 # print(is_even(2), is_even(3))

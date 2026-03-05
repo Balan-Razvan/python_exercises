@@ -1,3 +1,4 @@
+# curs ds
 def eliminare_dupes(l= []):
     return set(l)
 
